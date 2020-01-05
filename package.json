@@ -1,0 +1,30 @@
+{
+  "name": "webfontloader-issue",
+  "version": "1.0.0",
+  "description": "Test project to illustrate long delay loading custom fonts (#421)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --env.WEBFONTLOADER",
+    "build-nonwebfontloader": "webpack",
+    "dev": "webpack-dev-server --env.WEBFONTLOADER",
+    "dev-nonwebfontloader": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "Benjamin Lee",
+  "license": "MIT",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "ifdef-loader": "^2.1.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "@types/css-font-loading-module": "0.0.2",
+    "webfontloader": "^1.6.28"
+  }
+}

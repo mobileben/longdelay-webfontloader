@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimum-scale=1, width=device-width, height=device-height">
+    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style type="text/css">
+        @font-face {
+            font-family: "Bowlby One SC", sans-serif;
+            src: url("assets/BowlbyOneSC-Regular.ttf") format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Roboto", sans-serif;
+            src: url("assets/Roboto-Regular.ttf") format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background: #FFFFFF;
+            overflow :hidden;
+            position: fixed;
+            font-family: 'Bowlby One SC', sans-serif;
+            border: 0px;padding: 0px;margin: 0px;
+            width: 100%;
+            height: 100%;
+            padding-top: constant(safe-area-inset-top);
+        }
+
+        #game-canvas {
+            position: fixed;
+            top:0px;
+            left:0px;
+            width:0px;
+            height:0px;
+            background-color:#FFFFFF
+        }
+    </style>
+</head>
+<body>
+<title><%= htmlWebpackPlugin.options.title %></title>
+<canvas id="game-canvas"></canvas>
+<p>Hello</p>
+</body>
+</html>
